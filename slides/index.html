@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Spasm slides</title>
+
+    <link rel="stylesheet" href="./node_modules/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="./node_modules/reveal.js/dist/theme/black.css" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="./node_modules/reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <!-- Cover -->
+				<section>
+          <div class="header-primary">Spasm</div>
+
+          <p>The future of social media is here</p>
+        </section>
+        <!-- Intro -->
+				<section style="text-align: left;">
+          <div class="header-secondary">Social media is broken</div>
+          <p>People use DeFi, cryptocurrency, p2p markets, haveno...</p>
+          <p>But the vast majority of communication is controlled by a handful of slave tech platforms.</p>
+          <p>Let's have a look at the history of decentralized social media platforms, mentioning the most notable solutions.</p>
+
+        </section>
+        <!-- Trash -->
+				<section style="text-align: left;">
+          <div class="header-secondary">Traditional social media (TraSh)</div>
+
+          <p>Most people use centralized slave tech platforms like Twitter, Telegram, Discord, Reddit, and Facebook.</p>
+
+          <div style="font-size: 2rem; text-align: left;">
+          - Lack any interoperability<br>
+          - Censor alternative opinions<br>
+          - Track users and sell their data<br>
+          - Controlled by corporations<br>
+          - Discriminate against AI agents<br>
+          - Usually block Tor traffic<br>
+          - Might restrict VPN traffic<br>
+          - Often restrict FOSS clients<br>
+          - Require email addresses<br>
+          - Sometimes require phone numbers<br>
+          </div>
+        </section>
+
+        <!-- Fediverse -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              The dawn of decentralized social media
+            </div>
+            <div>
+
+The concept of the **Fediverse** emerged in the early 2010s with federated protocols like OStatus promising interlinked, user-controlled social networks.
+
+In 2016, **Mastodon** launched as a federated alternative to Twitter, and **Lemmy** was started later in 2020 as an alternative to Reddit.
+
+**ActivityPub**, released by the W3C in 2018, became the standard protocol for most **Fediverse** projects, except Diaspora.
+
+While **Fediverse** provides an alternative to traditional platforms controlled by corporations, messages are not signed with private keys, accounts can be seized similar to legacy social media platforms, and projects lack interoperability with ecosystems not based on **ActivityPub**.
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Signature-based -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+Signature-based offchain social media
+            </div>
+            <div>
+
+In 2014, **Secure Scuttlebutt** (SSB) revolutionized the space with its peer-to-peer network architecture and direct signing of all messages with private keys similar to how all cryptocurrency transactions are signed with private keys.
+
+**Nostr**, launched in 2019, continued this journey, but ditched p2p architecture in favor of more centralized **Nostr** relays. **Nostr** is probably one of the best offchain social media solutions to date, but it's still a closed ecosystem that lacks interoperability with other networks and requires centralized infrastructure in order to provide good UX.
+
+**Nostr** locks users to one specific private key, one messaging protocol, and most native **Nostr** apps support only one network. Some issues like unique usernames cannot be easily solved since **Nostr** private keys are not connected to any blockchain.
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Blockchain-based -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+The rise of blockchain-based platforms
+            </div>
+            <div>
+
+The year 2016 marked a significant milestone with the launch of **Steem**, a blockchain-based social media platform, which integrated cryptocurrency rewards for content creation and curation, giving users a financial incentive to participate.
+
+In 2020, due to centralization issues the platform was overtaken by Justin Sun and Binance's CZ, resulting in a community-driven fork **Hive**, which eventually suffered from the same problem of centralization of power in hands of a few.
+
+The **Lens** protocol, introduced in 2021, continued experimenting with a blockchain-based approach using the Polygon blockchain. And **Farcaster** tried to combine offchain with onchain data storage.
+
+However, **Steem**, **Hive**, **Lens**, and **Farcaster** are social graph-based closed ecosystems that rely on network effect and lack interoperability with other protocols. They also face scaling issues due to storing data onchain, often resulting in centralization and loss of censorship resistance.
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Alpha -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+Searching for alpha in the age of censorship
+            </div>
+            <div>
+
+In 2020, amid an unprecedented attack on freedom of speech, I've been searching for good decentralized censorship-resistant social media solutions since I've been censored on most legacy social media platforms. However, there was no good option, so I've decided to craft my own alpha.
+
+The development of **Spasm** began in early 2021 with an idea of creating a web3-native forum without any accounts, where users can sign all messages directly with a browser extension that holds a private key.
+
+Creating a new extension with a new private key would have slowed down the adoption, so it was decided to use Ethereum browser extensions like MetaMask, which got hundreds of thousands of downloads following the DeFi Summer of 2020.
+
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Genesis -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              Genesis
+            </div>
+            <div>
+
+The first Spasm instance [degenrocket.space](https://degenrocket.space) went live in the end of 2021 and supported unsigned RSS posts and DMP messages signed with Ethereum private keys.
+
+The instance had a feed of DeFi/NFT news fetched from RSS sources and users were able to publish new posts, comments, and reactions by directly signing them with web3 browser extensions like MetaMask.
+
+The genesis message was signed and [published](https://degenrocket.space/news/spasmid01192d1f9994bf436f50841) on January 1, 2022.
+
+> [not your keys, not your words](https://degenrocket.space/news/spasmid01192d1f9994bf436f50841)
+            </div>
+          </textarea>
+        </section>
+
+
+        <!-- Spasm-Nostr -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+Spasm-Nostr integration
+            </div>
+            <div>
+
+In 2023, I've discovered Nostr and was surprised that devs were able to kickstart the ecosystem and onboard a lot of users with their own unique Nostr private key.
+
+It's important to understand that Nostr is at least three different things:
+
+- Nostr private key
+- Nostr messaging protocol
+- Nostr network
+
+New features can be added to the Nostr messaging protocol via the "tags" field without achieving consensus, which was very important for me since chances of my improvement proposals being merged into the main repo were very low due to ideological disagreements with Nostr core devs.
+
+As a result, Nostr private keys and the Nostr messaging protocol were integrated into Spasm in 2023, while the Nostr network was integrated into Spasm instances in 2024.
+            </div>
+          </textarea>
+        </section>
+
+
+        <!-- Multi-signing -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+Multi-signing
+            </div>
+            <div>
+
+In 2024, Spasm V2 enabled groundbreaking multi-signing, which allowed users to simultaneously sign the same message with multiple private keys using different protocols and broadcast to different networks, while still having the same deterministic Spasm ID so replies from different networks can be properly chained to the parent event.
+
+For example, the post about Session vs SimpleX architectures was multi-signed on [monero.top](https://monero.top/news/spasmid010a70651fc27fb9125f7ea) with Ethereum and Nostr private keys and propagated to other Spasm instances like [degenrocket.space](https://degenrocket.space/news/spasmid010a70651fc27fb9125f7ea) and [dark.vegas](https://dark.vegas/news/spasmid010a70651fc27fb9125f7ea9f945d6add3530af91c829cdc414bcd5dda080f3020).
+
+Since the article was pushed to Spasm and Nostr networks, you can also read it in your [native Nostr app](nostr:note1e94uvd0vx2k9mgdgnzzpqmdh0swkqmkhq6uy4c2g3pganxy96pvqlkvmsz). All native Nostr replies to this post will also show up on Spasm instances that enable the Nostr network in settings.
+
+Multi-signed messages display multiple pubkeys so authors can take advantage of different ecosystems like unique usernames from blockchain-based Ethereum naming services and offchain social graph from Nostr.
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Forum -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              Spasm-powered forum
+            </div>
+            <div>
+
+While it's possible to build any Spasm-powered app, forums are ideal for discussing niche topics, fostering local communities, managing DAOs, holding hackathons, and other events.
+
+Benefits of running a Spasm-powered forum:
+- Users can submit new posts and comments in a truly web3 way without any registration, which increases engagement.
+- Community cannot be censored by a centralized platform.
+- Any moderation rules can be imposed.
+- Messages can propagate through different networks, increasing community's exposure.
+- Forums can optionally federate with other Spasm instances, adding more content to the feed.
+
+Many other web3 features like token-gating can be added upon request.
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Instances -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              Spasm instances
+            </div>
+            <div>
+
+              [degenrocket.space](https://degenrocket.space) - DeFi, NFT, privacy
+
+              [dark.vegas](https://dark.vegas) - lunarpunk anti-memecoins
+
+              [monero.top](https://monero.top) - Monero (XMR) forum
+
+              [forum.simplifiedprivacy](https://forum.simplifiedprivacy.com) - cypherpunk tech (ex-RebelNet)
+
+              [demo.spasm.network](https://demo.spasm.network) - demo playground
+
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Try forums -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              Try Spasm-powered forums
+            </div>
+            <div>
+
+Here are a few things you can try to explore a forum:
+- check different categories and other feed filters
+- submit a reaction, comment, and post as a guest
+- sign any event with Ethereum or Nostr browser extensions
+- sign an event with Nostr key and submit to Spasm and Nostr networks
+- multi-sign an event with Ethereum and Nostr browser extensions
+- check author's page (click on any pubkey)
+- check [admin panel](https://event.spasm.network/admin) (more settings can be changed via .env file)
+- check the official Spasm [website](https://spasm.network)
+- read AMAs or [FAQ](https://docs.spasm.network/faq)
+            </div>
+          </textarea>
+        </section>
+
+
+        <!-- Host forum -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              Host your own forum
+            </div>
+            <div>
+
+              A Spasm-powered forum consists of [frontend](https://github.com/degenrocket/degenrocket-web) and [backend](https://github.com/degenrocket/degenrocket-server).
+
+There is a very detailed [guide](https://github.com/degenrocket/degenrocket-scripts/tree/master/initial-server-setup) and bash [scripts](https://github.com/degenrocket/degenrocket-scripts) for the automated initial server setup, so you can set everything up within an hour if you have basic experience working with terminal (cli).
+
+            </div>
+          </textarea>
+        </section>
+
+
+        <!-- Federation -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              Federation
+            </div>
+            <div>
+
+Spasm instances are not syncing all the messages from all other instances. Instead, the system is very flexible so an admin of each instance can specify which messages should be synced from which instances at which time intervals. This approach helps preserve the freedom of association and solve scalability issues. It also helps against SPAM.
+
+Think about Spasm instances as subreddits. Some of them might share a lot of similar content, while others might have completely different content.
+
+For example, SimplifiedPrivacy and MoneroTop forums are currently not syncing messages from other instances, while DegenRocket instance is fetching "rising" posts and all comments from both forums.
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Other keys -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              Other keys
+            </div>
+            <div>
+
+Spasm is an agnostic and highly modular solution so more protocols, networks, and private keys will be integrated in the future.
+
+Communities with popular web3 browser extensions and simple signing logic like Solana or Dogecoin can easily be integrated within the next few years.
+
+PGP keys, popular among developers, cryptographers, security and privacy people are more challenging to integrate because the process of signing events with PGP keys is more complicated since PGP keys are not stored, and should not be stored, in browser extensions or in mobile apps.
+
+There are also other keys that have easy-to-use browser extensions, but various challenges make it harder to integrate them into Spasm, e.g., Starknet or Zano.
+
+One of the most challenging keys to integrate is a Semaphore key that allows users to sign a message on behalf of a group without revealing who actually signed the message.
+            </div>
+          </textarea>
+        </section>
+
+        <!-- Contacts -->
+        <section data-markdown style="text-align: left">
+          <textarea data-template>
+            <div class="header-secondary">
+              Contacts
+            </div>
+            <div>
+
+              [Session](https://getsession.org): degenrocket
+
+              Nostr: [web](https://primal.net/p/npub1kwnsd0xwkw03j0d92088vf2a66a9kztsq8ywlp0lrwfwn9yffjqspcmr0z) / [default app](nostr:npub1kwnsd0xwkw03j0d92088vf2a66a9kztsq8ywlp0lrwfwn9yffjqspcmr0z)
+            </div>
+          </textarea>
+        </section>
+
+			</div>
+		</div>
+    <style>
+    .header-primary {
+      color: #ba14bf;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+    .header-secondary {
+      font-size: 1em;
+      color: #b8b8b8;
+      font-weight: 600;
+    }
+    p {
+      font-size: 0.7em;
+    }
+    li {
+      font-size: 0.7em;
+    }
+
+    </style>
+
+		<script src="./node_modules/reveal.js/dist/reveal.js"></script>
+		<script src="./node_modules/reveal.js/plugin/notes/notes.js"></script>
+		<script src="./node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="./node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
