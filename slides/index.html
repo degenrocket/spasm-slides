@@ -5,9 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>Spasm slides</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="stylesheet" href="./node_modules/reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="./node_modules/reveal.js/dist/theme/black.css" />
+    <link rel="stylesheet" href="./node_modules/reveal.js/dist/theme/blood.css" />
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="./node_modules/reveal.js/plugin/highlight/monokai.css">
@@ -16,26 +17,49 @@
 		<div class="reveal">
 			<div class="slides">
         <!-- Cover -->
-				<section>
+        <section data-background="#000000">
+          <div class="header-primary" style="font-size:3em; opacity: 0.3;">Ω</div>
           <div class="header-primary">Spasm</div>
 
           <p>The future of social media is here</p>
 
-          <p style="font-size:0.5em; color: gray; margin-top: 4em;">Slide or click a right arrow to start</p>
+          <div style="margin-top: 3em;">
+            <p style="font-size:0.5em; color: gray;">Desktop: use Space or right/left arrows to navigate</p>
+            <p style="font-size:0.5em; color: gray;">Mobile: swipe up/down (portrait) or left/right (landscape)</p>
+          </div>
         </section>
+
+
+        <!-- Intro image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:900px" src="./images/eye.jpeg" alt="Eye">
+          </div>
+        </section>
+
+
         <!-- Intro -->
-				<section style="text-align: left;">
+        <section style="text-align: left" data-background="#000000">
           <div class="header-secondary">Social media is broken</div>
-          <p>People use DeFi, cryptocurrencies, p2p markets, haveno...</p>
-          <p>But the vast majority of communication is still controlled by a handful of slave tech platforms.</p>
+          <p>People use DeFi, cryptocurrencies, p2p markets, but the vast majority of communication is still controlled by a handful of slave tech platforms.</p>
           <p>Let's have a look at the history of decentralized social media platforms, mentioning the most notable solutions.</p>
 
         </section>
+
+
+        <!-- Trash image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:1000px" src="./images/trash.jpeg" alt="Trash">
+          </div>
+        </section>
+
+
         <!-- Trash -->
-				<section style="text-align: left;">
+        <section style="text-align: left" data-background="#000000">
           <div class="header-secondary">Traditional social media (TraSh)</div>
 
-          <p>Most people use centralized slave tech platforms like Twitter, Telegram, Discord, Reddit, and Facebook.</p>
+          <p>Most people use centralized slave tech platforms like Twitter, Telegram, Discord, Reddit, Facebook, and Instagram.</p>
 
           <div style="font-size: 2rem; text-align: left;">
           - Lack any interoperability<br>
@@ -51,8 +75,18 @@
           </div>
         </section>
 
+
+        <!-- Fediverse image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:1000px" src="./images/fediverse.jpeg" alt="Trash">
+          </div>
+        </section>
+
+
         <!-- Fediverse -->
-        <section data-markdown style="text-align: left">
+        <!-- <section data-markdown style="text-align: left"> -->
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               The dawn of decentralized social media
@@ -70,8 +104,17 @@ While **Fediverse** provides an alternative to traditional platforms controlled 
           </textarea>
         </section>
 
+
+        <!-- SSB-Nostr image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:1000px" src="./images/ssb-nostr.jpeg" alt="Trash">
+          </div>
+        </section>
+
+
         <!-- Signature-based -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
 Signature-based offchain social media
@@ -80,7 +123,7 @@ Signature-based offchain social media
 
 In 2014, **Secure Scuttlebutt** (SSB) revolutionized the space with its peer-to-peer network architecture and direct signing of all messages with private keys similar to how all cryptocurrency transactions are signed with private keys.
 
-**Nostr**, launched in 2019, continued this journey, but ditched p2p architecture in favor of more centralized **Nostr** relays. **Nostr** is probably one of the best offchain social media solutions to date, but it's still a closed ecosystem that lacks interoperability with other networks and requires centralized infrastructure in order to provide good UX.
+**Nostr**, introduced in 2019, continued this journey, but ditched p2p architecture in favor of more centralized **Nostr** relays. **Nostr** is probably one of the best offchain social media solutions to date, but it's still a closed ecosystem that lacks interoperability with other networks and requires centralized infrastructure in order to provide good UX.
 
 **Nostr** locks users to one specific private key, one messaging protocol, and most native **Nostr** apps support only one network. Some issues like unique usernames cannot be easily solved since **Nostr** private keys are not connected to any blockchain.
             </div>
@@ -88,7 +131,7 @@ In 2014, **Secure Scuttlebutt** (SSB) revolutionized the space with its peer-to-
         </section>
 
         <!-- Blockchain-based -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
 The rise of blockchain-based platforms
@@ -106,15 +149,25 @@ However, **Steem**, **Hive**, **Lens**, and **Farcaster** are social graph-based
           </textarea>
         </section>
 
+
+        <!-- Searching image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:900px" src="./images/bike.jpeg" alt="Bike">
+          </div>
+        </section>
+
+
+
         <!-- Alpha -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
 Searching for alpha in the age of censorship
             </div>
             <div>
 
-In 2020, amid an unprecedented attack on freedom of speech, I've been searching for good decentralized censorship-resistant social media solutions since I've been censored on most legacy social media platforms. However, there was no good option, so I've decided to craft my own alpha.
+In 2020, amid an unprecedented attack on the freedom of speech, I've been searching for good decentralized censorship-resistant social media solutions since I've been censored on most legacy social media platforms. However, there were no good options, so I've decided to craft my own alpha.
 
 The development of **Spasm** began in early 2021 with an idea of creating a web3-native forum without any accounts, where users can sign all messages directly with a browser extension that holds a private key.
 
@@ -124,8 +177,17 @@ Creating a new extension with a new private key would have slowed down the adopt
           </textarea>
         </section>
 
+
+        <!-- Genesis image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:750px" src="./images/genesis.png" alt="Genesis">
+          </div>
+        </section>
+
+
         <!-- Genesis -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Genesis
@@ -144,16 +206,16 @@ The genesis message was signed and [published](https://degenrocket.space/news/sp
         </section>
 
 
-        <!-- Genesis image -->
-        <section>
+        <!-- Spasm-nostr image -->
+        <section data-background="#000000">
           <div>
-            <img style="max-width:750px" src="./images/genesis.png" alt="Genesis">
+            <img style="max-width:800px" src="./images/spasm-nostr.jpeg" alt="Genesis">
           </div>
         </section>
 
 
         <!-- Spasm-Nostr -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
 Spasm-Nostr integration
@@ -177,7 +239,7 @@ As a result, Nostr private keys and the Nostr messaging protocol were integrated
 
 
         <!-- Multi-signing -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
 Multi-signing
@@ -196,7 +258,7 @@ Multi-signed messages display multiple pubkeys so authors can take advantage of 
         </section>
 
         <!-- Forum -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Spasm-powered forum
@@ -219,7 +281,7 @@ Many other web3 features like token-gating can be added upon request.
 
 
         <!-- Forums -->
-        <section>
+        <section data-background="#000000">
           <div>
             <img style="max-width:800px" src="./images/forums.png" alt="Forums">
           </div>
@@ -227,7 +289,7 @@ Many other web3 features like token-gating can be added upon request.
 
 
         <!-- Instances -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Spasm instances
@@ -249,7 +311,7 @@ Many other web3 features like token-gating can be added upon request.
         </section>
 
         <!-- Try forums -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Try Spasm-powered forums
@@ -272,7 +334,7 @@ Here are a few things you can try to explore a forum:
 
 
         <!-- Privacy -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Privacy
@@ -293,7 +355,7 @@ Here are a few things you can try to explore a forum:
 
 
         <!-- Moderation -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Moderation
@@ -310,7 +372,7 @@ Here are a few things you can try to explore a forum:
 
 
         <!-- Modules -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Modules
@@ -335,7 +397,7 @@ Different private keys and networks can be enabled/disabled for ideological or o
 
 
         <!-- Censorship-resistance -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Censorship-resistance
@@ -352,7 +414,7 @@ Different private keys and networks can be enabled/disabled for ideological or o
 
 
         <!-- Host forum -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Host your own forum
@@ -369,7 +431,7 @@ There is a very detailed [guide](https://github.com/degenrocket/degenrocket-scri
 
 
         <!-- Federation -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Federation
@@ -387,7 +449,7 @@ For example, SimplifiedPrivacy and MoneroTop forums are currently not syncing me
 
 
         <!-- Agentic economy -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Agentic economy
@@ -406,7 +468,7 @@ Spasm provides the most advanced public communication framework where each agent
 
 
         <!-- Other keys -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Other keys
@@ -427,7 +489,7 @@ One of the most challenging keys to integrate is a Semaphore key that allows use
         </section>
 
         <!-- Contacts -->
-        <section data-markdown style="text-align: left">
+        <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
             <div class="header-secondary">
               Contacts
@@ -445,8 +507,9 @@ One of the most challenging keys to integrate is a Semaphore key that allows use
 		</div>
     <style>
     .header-primary {
-      color: #ba14bf;
-      font-size: 1.3em;
+      /* color: #ba14bf; */
+      color: #f420af;
+      font-size: 1.4em;
       font-weight: 600;
     }
     .header-secondary {
@@ -459,6 +522,9 @@ One of the most challenging keys to integrate is a Semaphore key that allows use
     }
     li {
       font-size: 0.7em;
+    }
+    a {
+      color: #f420af;
     }
 
     </style>
