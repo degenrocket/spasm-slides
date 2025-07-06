@@ -271,6 +271,14 @@ As a result, Nostr private keys and the Nostr messaging protocol were integrated
         </section>
 
 
+        <!-- Multi-signing image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:690px" src="./images/multi-signing.jpeg" alt="Multi-signing">
+          </div>
+        </section>
+
+
         <!-- Multi-signing -->
         <section data-markdown style="text-align: left" data-background="#000000">
           <textarea data-template>
@@ -281,14 +289,22 @@ Multi-signing
 
 In 2024, Spasm V2 enabled groundbreaking multi-signing, which allowed users to simultaneously sign the same message with multiple private keys using different protocols and broadcast to different networks, while still having the same deterministic Spasm ID so replies from different networks can be properly chained to the parent event.
 
-For example, the post about Session vs SimpleX architectures was multi-signed on [monero.top](https://monero.top/news/spasmid010a70651fc27fb9125f7ea) with Ethereum and Nostr private keys and propagated to other Spasm instances like [degenrocket.space](https://degenrocket.space/news/spasmid010a70651fc27fb9125f7ea) and [dark.vegas](https://dark.vegas/news/spasmid010a70651fc27fb9125f7ea9f945d6add3530af91c829cdc414bcd5dda080f3020).
+For example, the post about Session vs SimpleX architectures was multi-signed on [monero.top](https://monero.top/news/spasmid010a70651fc27fb9125f7ea) with Ethereum and Nostr private keys and propagated to other Spasm instances like [degenrocket.space](https://degenrocket.space/news/spasmid010a70651fc27fb9125f7ea).
 
-Since the article was pushed to Spasm and Nostr networks, you can also read it in your [native Nostr app](nostr:note1e94uvd0vx2k9mgdgnzzpqmdh0swkqmkhq6uy4c2g3pganxy96pvqlkvmsz). All native Nostr replies to this post will also show up on Spasm instances that enable the Nostr network in settings.
+Since the article was pushed to Spasm and Nostr networks, you can also read it in your [native Nostr app](nostr:note1e94uvd0vx2k9mgdgnzzpqmdh0swkqmkhq6uy4c2g3pganxy96pvqlkvmsz). All native Nostr replies to this post will be shown on Spasm instances that enable the Nostr network in settings.
 
 Multi-signed messages display multiple pubkeys so authors can take advantage of different ecosystems like unique usernames from blockchain-based Ethereum naming services and offchain social graph from Nostr.
             </div>
           </textarea>
         </section>
+
+        <!-- Forum image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:700px" src="./images/feed.jpeg" alt="Forum">
+          </div>
+        </section>
+
 
         <!-- Forum -->
         <section data-markdown style="text-align: left" data-background="#000000">
@@ -363,6 +379,14 @@ Here are a few things you can try to explore a forum:
 - read AMAs or [FAQ](https://docs.spasm.network/faq)
             </div>
           </textarea>
+        </section>
+
+
+        <!-- Privacy image -->
+        <section data-background="#000000">
+          <div>
+            <img style="max-width:475px" src="./images/login.jpeg" alt="Login">
+          </div>
         </section>
 
 
@@ -520,7 +544,7 @@ Spasm is an agnostic and highly modular solution so more protocols, networks, an
 
 Communities with popular web3 browser extensions and simple signing logic like Solana or Dogecoin can easily be integrated within the next few years.
 
-PGP keys, popular among developers, cryptographers, security and privacy people are more challenging to integrate because the process of signing events with PGP keys is more complicated since PGP keys are not stored, and should not be stored, in browser extensions or in mobile apps.
+PGP keys, popular among devs, cryptographers, security and privacy people are more challenging to integrate because the process of signing events with PGP keys is more complicated since PGP keys are not stored, and should not be stored, in browser extensions or in mobile apps.
 
 There are also other keys that have easy-to-use browser extensions, but various challenges make it harder to integrate them into Spasm, e.g., Starknet or Zano.
 
