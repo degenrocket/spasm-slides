@@ -23,3 +23,7 @@ For **spasm.js** library see:
 ### License
 
 MIT License
+
+---
+
+[Enter the future](https://slides.spasm.network)
